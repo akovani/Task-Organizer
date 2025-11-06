@@ -1,0 +1,33 @@
+.create-task {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.FormControl{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+.FormGroup{
+    margin-bottom: 1em;
+}
+.form-control{
+    max-width: 90%;
+}
+.table{
+    max-width: 1200px;
+}
+td{
+    text-align: left;
+}
+.ButtonMargin{
+    margin-bottom: 2em;
+}
+
+.CardMargin, .FormControl{
+    margin: auto;
+}
+
+.CardMargin{
+    width: 18rem;
+}

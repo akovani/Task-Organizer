@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateTask Component snapshot matches implementation 1`] = `
+<div
+  className="create-task"
+>
+  <div
+    className="container"
+  >
+    <h1>
+      Create a task
+    </h1>
+    <br />
+    <div
+      className="form"
+    >
+      <form
+        className=""
+        onSubmit={[Function]}
+      >
+        <table
+          className="table"
+        >
+          <tbody>
+            <tr>
+              <td>
+                <div>
+                  <label
+                    className="form-label"
+                    htmlFor="name"
+                  >
+                    Name:
+                  </label>
+                </div>
+              </td>
+              <td>
+                <input
+                  className="form-control"
+                  id="name"
+                  name="name"
+                  onChange={[Function]}
+                  required={true}
+                  type="text"
+                  value=""
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  <label
+                    className="form-label"
+                    htmlFor="description"
+                  >
+                    Description:
+                  </label>
+                </div>
+              </td>
+              <td>
+                <input
+                  className="form-control"
+                  id="description"
+                  name="description"
+                  onChange={[Function]}
+                  required={true}
+                  type="text"
+                  value=""
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  <label
+                    className="form-label"
+                    htmlFor="priority"
+                  >
+                    Priority:
+                  </label>
+                </div>
+              </td>
+              <td>
+                <select
+                  className="form-select"
+                  id="priority"
+                  name="priority"
+                  onChange={[Function]}
+                  required={true}
+                  value=""
+                >
+                  <option
+                    disabled={true}
+                    value=""
+                  >
+                    Select an option
+                  </option>
+                  <option
+                    value="High"
+                  >
+                    High
+                  </option>
+                  <option
+                    value="Medium"
+                  >
+                    Medium
+                  </option>
+                  <option
+                    value="Low"
+                  >
+                    Low
+                  </option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  <label
+                    className="form-label"
+                    htmlFor="status"
+                  >
+                    Status:
+                  </label>
+                </div>
+              </td>
+              <td>
+                <select
+                  className="form-select"
+                  id="status"
+                  name="status"
+                  onChange={[Function]}
+                  required={true}
+                  value=""
+                >
+                  <option
+                    disabled={true}
+                    value=""
+                  >
+                    Select an option
+                  </option>
+                  <option
+                    value="To do"
+                  >
+                    To do
+                  </option>
+                  <option
+                    value="In progress"
+                  >
+                    In progress
+                  </option>
+                  <option
+                    value="Done"
+                  >
+                    Done
+                  </option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button
+          className="ButtonMargin btn btn-primary"
+          disabled={false}
+          style={
+            Object {
+              "marginBottom": "2em",
+            }
+          }
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;

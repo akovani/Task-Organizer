@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot matches implementation 1`] = `
+<div
+  className="task-overview"
+>
+  <div
+    className="container"
+  >
+    <h1>
+      Task Overview
+    </h1>
+    <a
+      className="btn btn-primary"
+      href="/CreateTask"
+    >
+      Create a Task
+    </a>
+    <table
+      className="table"
+    >
+      <thead>
+        <tr>
+          <th
+            onClick={[Function]}
+          >
+            Name 
+            ▲
+          </th>
+          <th
+            onClick={[Function]}
+          >
+            Description 
+          </th>
+          <th
+            onClick={[Function]}
+          >
+            Status 
+          </th>
+          <th
+            onClick={[Function]}
+          >
+            Priority 
+          </th>
+          <th>
+            Actions
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+  </div>
+</div>
+`;

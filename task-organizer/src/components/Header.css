@@ -1,0 +1,47 @@
+header {
+    background-color: #1D3F5A;
+    color: #fff;
+    border-bottom: 2px solid black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    nav li {
+        
+    }
+        nav li:hover {
+            background-color: #235882
+        }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 1rem;
+    }
+
+        nav a:hover {
+            text-decoration: none;
+            color: lightgray;
+        }
+
+.nav-icon {
+    margin-right: 0.5rem;
+    max-width: 20px;
+    max-height: 20px;
+}

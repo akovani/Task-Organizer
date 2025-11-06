@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot matches implementation 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="container"
+  >
+    <br />
+    <h1>
+      TaskOrganizer
+    </h1>
+    <img
+      alt="wallpaper"
+      className="wallpaper"
+      src="home_wallpaper.png"
+    />
+    <br />
+    <br />
+    <div>
+      <a
+        className="btn btn-primary btn-lg"
+        href="/TaskOverview"
+      >
+        Go to TaskOverview
+      </a>
+    </div>
+  </div>
+</div>
+`;

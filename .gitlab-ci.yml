@@ -1,0 +1,70 @@
+image: node:20.3.1
+
+stages:
+  - linter
+  - build
+  - test
+  - deploy
+
+cache:
+  paths:
+    - task-organizer/node_modules/
+
+linter: 
+  stage: linter
+  script:
+    - cd task-organizer
+    - npm install
+    - npm run linter
+    
+build:
+  stage: build
+  script:
+    - echo "Starting build"
+    - cd task-organizer
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - task-organizer/build/
+
+test-src:
+  stage: test
+  only:
+    - main
+  script:
+    - echo "Starting tests"
+    - cd task-organizer
+    - npm run junit-test
+  artifacts:
+    paths:
+      - task-organizer/junit.xml
+
+test-snyk:
+  stage: test
+  only:
+    - main
+  script:
+    - npm install -g snyk
+    - snyk auth $SNYK_TOKEN
+    - snyk code test --org=7f33dd35-1068-4424-aca9-0adcbec87959
+  allow_failure: true
+
+deploy:
+  stage: deploy
+  only:
+    - main
+  script:
+    - echo "Starting deploy"
+    - |
+      if [ "$REACT_APP_ENV" == "preprod" ]; then
+        npm install --location=global vercel
+        vercel pull --yes --environment=production --token=$VERCEL_TOKEN
+        vercel build --prod --token=$VERCEL_TOKEN
+        vercel deploy --prebuilt --prod --token=$VERCEL_TOKEN
+      elif [ "$REACT_APP_ENV" == "prod" ]; then
+        npm install --location=global firebase-tools
+        cd task-organizer
+        firebase use --token $FIREBASE_TOKEN
+        firebase deploy --only hosting
+      fi
