@@ -9,7 +9,7 @@
 1. clone the repository
 
     ```bash
-    git clone https://github.com/PascaII/task-organizer.git
+    git clone https://github.com/akovani/Task-Organizer.git
     ```
 
 2. replace the firebaseConfig in src/database/firebase-config.js with your own secrets.
